@@ -5,6 +5,7 @@ margin-left: none;
 body{
     font-family: Arial;
     margin: 0;
+    max-width: fit-content;
     /* display: flex;
     flex-direction: column; */
    /* 
@@ -59,9 +60,7 @@ ul{
     display: flex;
     margin-bottom: 20px;
   }
-  #image-1{
-    max-width: 100vh;
-  }
+
   aside {
     width: 200px;
     background-color: #b9c6ae;
@@ -100,37 +99,65 @@ ul{
     padding-top:30px;
     text-align: center;
   }
-  /* .about-me > p{
-    flex: 70vh;
-    background-color: #fff;
-    padding: 20px;
-  } */
- .work img{
 
-    border: 3px solid rgb(37, 149, 214);
-  }
- 
-  
-  #img-layout{
+  .surf-report{
     display: flex;
     flex-direction: column;
+    /* width: 100vh; */
   }
+  
+#image-1{
+  display: flex;
+  flex-grow: 1;
+    /* max-width: 100vh; */
+    max-height: 30vh ;
+    /* width: 100vh; */
+  }
+
   .group-images{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+   
   }
-  .group-images img{
+  .container {
+    position: relative;
+    font-family: Arial;
+  
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+
     
-    width:47%;
-    /* display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; */
-    /* flex-wrap: 1; */
-    /* padding: 0 20px; */
-    margin:10px 0;
   }
+  .text-block {
+    position: absolute;
+    /* left: 20px; */
+    bottom: 20px;
+    background-color: black;
+    color: white;
+    line-height: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .group-images img{
+    width: 51vh;
+    min-width: 505px;
+    height: 150px;
+  }
+ .work img{
+
+    border: 3px solid rgb(37, 149, 214);
+  }
+
+ img:hover{
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  
+ }
+  
+
 
   
 footer{
@@ -146,4 +173,11 @@ footer{
     text-align:end;
     justify-content: center;
  
+}
+
+@media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: column;
+  }
 }
