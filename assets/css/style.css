@@ -1,3 +1,4 @@
+
 *{
 box-sizing: border-box;
 margin-left: none;
@@ -16,17 +17,25 @@ body{
 header {
     display:flex;
     flex-direction: row;
-    text-align: center;
+  
+    /* text-align: center; */
     background: #13293d;
     color: #fff;
+  
     
   }
+  h1{
+    line-height: 70px;
+    text-align: center;
+    font-family:sans-serif;
+  }
 
-ul{
+nav{
     padding-top: 15px;
     display: flex;
-    justify-content:flex-end;
-    list-style: none;
+    text-align: center;
+    /* justify-content:flex-end; */
+    /* list-style: none; */
     
   }
 
@@ -36,6 +45,15 @@ ul{
     text-decoration: none;
     text-align: center;
     
+  }
+  h6{
+    font-size: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+h2 ,h4{
+    /* font-size: 10px; */
+    font-family:sans-serif;
+    /* line-height: 20%; */
   }
 
   .subtitle{
@@ -51,9 +69,10 @@ ul{
     /* color: #fff; */
   }
   main{
-    /* padding:10px;
+    /* padding:10px; */
     display: flex;
-    flex-wrap:wrap; */
+    flex-direction: column;
+    /* flex-wrap:wrap; */
     /* justify-content: space-around; */
   }
   section{
@@ -64,18 +83,12 @@ ul{
   aside {
     width: 200px;
     background-color: #b9c6ae;
-    /* padding: 80px; */
     text-align: right;
     border-right: 5px solid black;
-    padding: 20px;
   }
   .division{
     padding: 20px;
-    width: 120vh;
-    /* max-width:500px; */
-    /* flex-wrap: wrap; */
-    /* flex-direction: column; */
-    /* flex: 300px; */
+    width: 80vh;
     background-color: rgb(187, 238, 153);
     margin-left:20px;
     margin-top: 0px;
@@ -124,7 +137,6 @@ ul{
   .container {
     position: relative;
     font-family: Arial;
-  
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 10px;
@@ -137,14 +149,14 @@ ul{
     bottom: 20px;
     background-color: black;
     color: white;
-    line-height: 2px;
+    line-height: 0.5px;
     padding-left: 20px;
     padding-right: 20px;
   }
 
   .group-images img{
-    width: 51vh;
-    min-width: 505px;
+    width: 38vh;
+    min-width: 400px;
     height: 150px;
   }
  .work img{
@@ -154,7 +166,7 @@ ul{
 
  img:hover{
   box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-  
+  filter:sepia(90%)
  }
   
 
