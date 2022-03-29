@@ -62,8 +62,8 @@ THEN I am presented with a responsive layout that adapts to my viewport
 * By changing the size of the browser, the layout the page change
 *  GitHub repository name: 
 *  The URL to the website is: Professional-Portfolio-march-29
-*  The git hub URL is: 
-*  The URL of the GitHub repository : 
+*  The git hub URL is: https://saghar-b.github.io/Professional-Portfolio-march-29/
+*  The URL of the GitHub repository : https://github.com/saghar-b/Professional-Portfolio-march-29
   
 ## Mock-Up
 
